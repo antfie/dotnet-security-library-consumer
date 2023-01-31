@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-rm -rf veracode veracode.zip bin obj target
-docker run --rm -it -v "$(pwd):/app" --workdir /app mcr.microsoft.com/dotnet/sdk:7.0 dotnet publish -c Release -o target && \
-cd target && \
-zip -r ../target.zip ./* && \
+rm -rf veracode veracode.zip bin obj build
+docker run --rm -it -v "$(pwd):/app" --workdir /app mcr.microsoft.com/dotnet/sdk:7.0 dotnet publish -c Release -o build && \
+cd build && \
+zip -r ../build.zip ./* && \
 cd .. && \
-rm -rf target && \
-zipinfo target.zip
+rm -rf build && \
+zipinfo build.zip

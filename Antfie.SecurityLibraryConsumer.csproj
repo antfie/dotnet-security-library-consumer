@@ -6,6 +6,6 @@
     <UseAppHost>False</UseAppHost>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Antfie.SecurityLibrary" Version="1.0.0" />
+    <PackageReference Include="Antfie.SecurityLibrary" Version="1.0.1" />
   </ItemGroup>
 </Project>
